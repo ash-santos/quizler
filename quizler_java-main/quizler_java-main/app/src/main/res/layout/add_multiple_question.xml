@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Question"
+        android:textColorHint="#3366FF" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Answer"
+        android:textColorHint="#33cc33" />
+
+    <EditText
+        android:id="@+id/wrongAnswer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wrong Answer 1"
+        android:textColorHint="#ff0000" />
+
+    <EditText
+        android:id="@+id/wrongAnswer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wrong Answer 2"
+        android:textColorHint="#ff0000" />
+
+    <EditText
+        android:id="@+id/wrongAnswer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wrong Answer 3"
+        android:textColorHint="#ff0000" />
+
+</LinearLayout>

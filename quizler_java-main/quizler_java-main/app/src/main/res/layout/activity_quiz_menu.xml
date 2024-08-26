@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="569dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <Button
+            android:id="@+id/btn_add_question"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/square_button"
+            android:backgroundTint="#3366FF"
+            android:onClick="quiz_list"
+            android:text="Add Question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/btn_fashcard"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#3366FF"
+            android:onClick="flashcard"
+            android:text="Flashcard"
+            android:background="@drawable/square_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_add_question" />
+
+        <Button
+            android:id="@+id/btn_try_quiz"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#3366FF"
+            android:onClick="try_quiz"
+            android:text="Try Quiz"
+            android:background="@drawable/square_button"
+            android:textColorHighlight="#3366FF"
+            android:textColorLink="#3366FF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_list_question" />
+
+        <Button
+            android:id="@+id/btn_list_question"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#3366FF"
+            android:onClick="question_list"
+            android:text="List Questions"
+            android:background="@drawable/square_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_fashcard" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="407dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="44dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/quiz_name"
+                android:layout_width="262dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:baselineAligned="false"
+                android:fontFamily="sans-serif"
+                android:text="quiz_name"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/btn_delete_quiz"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:backgroundTint="#ff0000"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:onClick="delete_quiz"
+                app:icon="@drawable/icon_delete"
+                app:iconGravity="top"
+                app:iconSize="30dp" />
+
+            <Button
+                android:id="@+id/btn_rename"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:backgroundTint="#3366FF"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:onClick="rename_quiz"
+                app:icon="@drawable/icon_edit"
+                app:iconGravity="top"
+                app:iconPadding="8dp"
+                app:iconSize="30dp" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3366FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

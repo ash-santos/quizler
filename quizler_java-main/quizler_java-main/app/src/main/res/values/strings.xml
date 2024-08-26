@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">quizler_java</string>
+    <string-array name="quiz_type">
+        <item>Multiple Choice</item>
+        <item>Identification</item>
+        <item>True Or False</item>
+        <!-- Add more items as needed -->
+    </string-array>
+</resources>
